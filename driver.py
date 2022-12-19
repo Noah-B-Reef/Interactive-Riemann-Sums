@@ -2,7 +2,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 import sys
 from riemann import Riemann
 
-
+# Display main GUI window
 class Window(QMainWindow):
     def __init__(self):
         super().__init__()
