@@ -8,7 +8,20 @@ class Riemann:
         self.numOfSteps = numOfSteps
 
     def eval(self):
-        pass
+        self.validate()
+
+        area = 0
+
+       for step in range(numOfSteps):
+           #TODO
+           pass
+
 
     def draw(self):
         pass
+
+   def validate(self):
+       if self.stepSize * self.numOfSteps > abs(self.interval[0]) + abs(self.interval[1]):
+           print("Step size and/or number of steps exceeds interval")
+           exit()
+        # TODO
