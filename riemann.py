@@ -8,14 +8,16 @@ class Riemann:
         self.numOfSteps = numOfSteps
 
     def eval(self):
-        self.validate()
 
-        area = 0
+       self.validate()
+       area = 0
+       x = interval[0]
 
        for step in range(numOfSteps):
-           #TODO
-           pass
+           x = x + stepSize
+           area += func(x)
 
+       return area
 
     def draw(self):
         pass
